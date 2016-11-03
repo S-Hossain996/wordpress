@@ -1,0 +1,22 @@
+1.IN WORDPRESS TEMPLATE JIERACRCHY SINGLE.PHP IS USED TO SHOW THE SINGLE PAGE. iF SINGLE PAGE IN NOT PROVIDED THE INDEX
+PAGE WILL Be USED TO SHOw SINGLE POST.
+2.there are two types of content in wordpress post-type and page type..
+3.single.php used to show post-type contents.
+4.page.php used to show page type content or static page accordig to wordpress hierarchy.
+5.site front page or index page can be front-page.php/home.php depending hierarchy order in directory.
+6.If we declare a front page we have to fix it from setting reading from dashboard.
+
+
+/*Menu Notes*/
+1.To get the menu option in theme. we have to register the menu using register_nav_menus() function.
+2.To Activate the registered we have to make menu in the dashboard and show the location register menu to build a successful menu.
+3.The assciative array like menu key/menu-slug used to call it on our theme with wp_nav_menu(<the key/slug menu name>).
+4.To get any particular menu in the page we have to use the wp_nav_menu  function with <theme-location => 'slug/key' pair) other wise the i will print the last found menu from th registration.
+
+/* widgets */
+1.to register widgets we should use widgets_init action hook.
+2.dynamic_sidebar() function check calls sidebars in order or with name or id. If it the given side bar exist or 
+or ready to load it will return true, or else it will return false;
+
+
+/* custom posts */
